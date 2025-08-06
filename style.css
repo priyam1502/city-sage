@@ -1,0 +1,107 @@
+/* styles.css | CitySage Frontend */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #fff;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffc8;
+  text-shadow: 1px 1px 3px #000;
+}
+
+nav a {
+  color: #ccc;
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #00ffc8;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+  text-align: center;
+  background: url('../assets/images/city-bg.jpg') no-repeat center center/cover;
+  min-height: 100vh;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #00ffc8;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 4rem 2rem;
+  background-color: #1b1f29;
+}
+
+.feature-box {
+  background-color: #222836;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 255, 200, 0.2);
+}
+
+.feature-box i {
+  font-size: 2rem;
+  color: #00ffc8;
+  margin-bottom: 1rem;
+}
+
+.feature-box h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.feature-box p {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+
+footer {
+  background-color: #111;
+  padding: 2rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+}

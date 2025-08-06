@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CitySage – AI Assistant</title>
+  <link rel="icon" href="assets/images/favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md p-4 flex justify-between items-center">
+    <h1 class="text-2xl font-bold text-blue-700">CitySage</h1>
+    <div class="space-x-4">
+      <a href="index.html" class="text-gray-700 hover:text-blue-600">Home</a>
+      <a href="dashboard.html" class="text-gray-700 hover:text-blue-600">Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- AI Chatbot Interface -->
+  <section class="p-8 max-w-4xl mx-auto">
+    <h2 class="text-3xl font-bold mb-6">💬 CitySage AI Assistant</h2>
+    <div class="bg-white p-6 rounded-xl shadow">
+      <div id="chat-box" class="h-72 overflow-y-auto border border-gray-300 p-4 mb-4 rounded text-sm bg-gray-50">
+        <div class="text-gray-500">Ask me anything about the city...</div>
+        <!-- Chat messages will appear here -->
+      </div>
+      <div class="flex">
+        <input type="text" id="user-input" class="flex-1 border border-gray-300 rounded-l p-2" placeholder="Type your question..." />
+        <button onclick="sendMessage()" class="bg-blue-600 text-white px-4 rounded-r hover:bg-blue-700">Send</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white text-center py-6 mt-10">
+    <p>&copy; 2025 CitySage – AI Assistant Module</p>
+  </footer>
+
+  <script src="js/assistant.js"></script>
+</body>
+</html>
